@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Category(
-    val idCategory: String,
+    var idCategory: String = "1",
     val strCategory: String?,
     val strCategoryDescription: String?,
     val strCategoryThumb: String,

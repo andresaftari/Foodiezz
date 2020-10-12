@@ -9,7 +9,7 @@ import kotlinx.android.parcel.Parcelize
 @Entity(tableName = "category")
 data class CategoryEntity(
     @PrimaryKey
-    val idCategory: String,
+    var idCategory: String = "1",
     val strCategory: String?,
     val strCategoryDescription: String?,
     val strCategoryThumb: String,

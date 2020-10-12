@@ -1,9 +1,9 @@
 package com.andresaftari.foodiezz.favorite
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.andresaftari.core.adapter.ReusableAdapter
 import com.andresaftari.core.domain.model.Category

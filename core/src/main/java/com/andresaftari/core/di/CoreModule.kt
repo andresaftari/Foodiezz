@@ -26,9 +26,9 @@ val databaseModule = module {
         val factory = SupportFactory(keyPhrase)
         Room.databaseBuilder(
             androidContext(), MealDB::class.java, "foodiezz_db"
-        ).allowMainThreadQueries()
+        ).fallbackToDestructiveMigration()
+            .allowMainThreadQueries()
             .openHelperFactory(factory)
-            .fallbackToDestructiveMigration()
             .build()
 
     }
